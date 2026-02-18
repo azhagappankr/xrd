@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Research Equipment Booking</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Research Equipment Booking</h1>
+    <p>Browse availability and request time on institute equipment.</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Equipment</h2>
+      <ul class="equipment-list">
+        <li>
+          <h3>Confocal Microscope</h3>
+          <p>High‑resolution fluorescence imaging.</p>
+          <p>
+            <a class="btn" href="equipment/confocal.html">View & Book</a>
+          </p>
+        </li>
+        <li>
+          <h3>LC–MS</h3>
+          <p>Liquid chromatography–mass spectrometry.</p>
+          <p>
+            <a class="btn" href="equipment/lcms.html">View & Book</a>
+          </p>
+        </li>
+        <!-- Add more equipment items as needed -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="year"></span> Your Lab / Department</small>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
